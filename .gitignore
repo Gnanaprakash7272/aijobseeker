@@ -1,0 +1,52 @@
+# ── Secrets — NEVER commit these ─────────────────────────────────────────────
+backend/.env
+.env
+**/.env
+**/.env.local
+**/.env.*.local
+
+# ── Python ────────────────────────────────────────────────────────────────────
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/temp_*.pdf
+backend/temp_*.docx
+backend/temp_*.txt
+backend/temp_*.png
+backend/jobmatch_sessions.db
+backend/uploads/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+
+# ── Node / Next.js ────────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env.local
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor ───────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+# (docker-compose.yml IS committed — only local override excluded)
+docker-compose.override.yml
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
